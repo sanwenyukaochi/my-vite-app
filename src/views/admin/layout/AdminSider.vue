@@ -56,7 +56,7 @@ const items = [
   {
     key: '5', label: '商品管理', icon: () => h(StarFilled),
     children: [
-      {key: '5-1', label: 'Team 1', onClick: () => router.push('/goodList')},
+      {key: '5-1', label: '商品列表', onClick: () => router.push('/goodList')},
       {key: '5-2', label: 'Team 2'},
     ],
   },
@@ -84,14 +84,14 @@ const items = [
   {
     key: '9', label: '论坛管理', icon: () => h(FireFilled),
     children: [
-      {key: '9-1', label: 'Team 1'},
+      {key: '9-1', label: '论坛列表', onClick: () => router.push('/forumList')},
       {key: '9-2', label: 'Team 2'},
     ],
   },
   {
     key: '10', label: '公告管理', icon: () => h(SoundFilled),
     children: [
-      {key: '10-1', label: 'Team 1'},
+      {key: '10-1', label: '公告列表', onClick: () => router.push('/noticeList')},
       {key: '10-2', label: 'Team 2'},
     ],
   },

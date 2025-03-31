@@ -3,7 +3,7 @@ import httpRequest from "@/axios/axiosConfig.js";
 export default {
 
     async mainPetList(params) {
-        return await httpRequest.get('/main/listPet', { params });
+        return await httpRequest.get('/main-listPet', { params });
     },
 
 }

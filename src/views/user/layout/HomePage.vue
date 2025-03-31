@@ -4,7 +4,8 @@ import UserSlider from "@/views/user/layout/UserSider.vue";
 import h3_banner_slide01 from "@/assets/img/banner/h3_banner_slide01.jpg";
 import h3_banner_img01 from "@/assets/img/banner/h3_banner_img01.jpg";
 import h3_banner_img02 from "@/assets/img/banner/h3_banner_img02.jpg";
-import MainList from "@/views/user/MainList.vue";
+import MainPetList from "@/views/user/MainPetList.vue";
+import MainGoodList from "@/views/user/MainGoodList.vue";
 </script>
 
 <template>
@@ -34,11 +35,12 @@ import MainList from "@/views/user/MainList.vue";
 
       <div class="content-section" :style="{ backgroundImage: `url(${shopBg})` }">
 <!--        <div class="banner-container">Content</div>-->
-        <MainList/>
+        <MainPetList/>
       </div>
 
       <div class="content-section">
-        <div class="banner-container">Content</div>
+<!--        <div class="banner-container">Content</div>-->
+        <MainGoodList/>
       </div>
 
     </a-layout-content>
@@ -69,25 +71,18 @@ import MainList from "@/views/user/MainList.vue";
 
 /* Banner 主要布局 */
 .banner-container {
-  padding: 24px;
-  min-height: 380px;
+  max-width: 1200px;  /* 与商品和宠物卡片容器宽度一致 */
+  margin: 0 auto;     /* 居中显示 */
+  padding: 35px;      /* 与商品和宠物卡片容器padding一致 */
   display: flex;
-  align-items: center;
   gap: 20px;
-  flex-wrap: wrap;
-  max-width: 1000px;
-  margin: 0 auto;
-  border-radius: 10px;
 }
 
 /* 左侧大图 */
 .banner-left {
-  flex: 1;
-  min-width: 300px;
-  height: 380px;
+  flex: 2;
   border-radius: 10px;
   overflow: hidden;
-  max-width: 700px;
 }
 
 .banner-left img {
@@ -99,17 +94,13 @@ import MainList from "@/views/user/MainList.vue";
 /* 右侧两张小图 */
 .banner-right {
   flex: 1;
-  min-width: 300px;
-  height: 380px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   gap: 20px;
-  max-width: 300px;
 }
 
 .banner-small {
-  height: 48%;
+  height: calc(50% - 10px);  /* 减去gap的一半 */
   border-radius: 10px;
   overflow: hidden;
 }

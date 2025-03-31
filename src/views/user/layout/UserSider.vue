@@ -9,20 +9,23 @@ const items = [
     key: '1', label: '主页', icon: () => h(PieChartOutlined),
   },
   {
-    key: '2', label: '商店', icon: () => h(HomeFilled),
+    key: '2', label: '所有宠物', icon: () => h(PieChartOutlined),
   },
   {
-    key: '3', label: '论坛', icon: () => h(HomeFilled),
+    key: '3', label: '商店', icon: () => h(HomeFilled),
+  },
+  {
+    key: '4', label: '论坛', icon: () => h(HomeFilled),
     children: [
-      {key: '3-1', label: '查看论坛', onClick: () => router.push('')},
-      {key: '3-2', label: '发布论坛'},
+      {key: '4-1', label: '查看论坛', onClick: () => router.push('')},
+      {key: '4-2', label: '发布论坛'},
     ],
   },
   {
-    key: '4', label: '公告', icon: () => h(HomeFilled),
+    key: '5', label: '公告', icon: () => h(HomeFilled),
   },
   {
-    key: '5', label: '个人中心', icon: () => h(HomeFilled),
+    key: '6', label: '个人中心', icon: () => h(HomeFilled),
   },
 ];
 </script>

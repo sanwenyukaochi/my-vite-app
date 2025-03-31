@@ -1,8 +1,5 @@
 import { useRouter, useRoute } from 'vue-router';
 
-
-
-
 export function useJumpToPath() {
     const router = useRouter();  // 获取路由实例
     const route = useRoute();  // 获取当前路由信息

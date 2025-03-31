@@ -12,6 +12,8 @@ const routes = [
             {path: '/petList',component: () => import('@/views/admin/views/PetList.vue'),},
             {path: '/petTypeList',component: () => import('@/views/admin/views/PetTypeList.vue')},
             {path: '/goodList',component: () => import('@/views/admin/views/GoodList.vue')},
+            {path: '/forumList',component: () => import('@/views/admin/views/ForumList.vue')},
+            {path: '/noticeList',component: () => import('@/views/admin/views/NoticeList.vue')},
             {path: '/chat',component: () => import('@/views/Chat.vue')},
         ]
     },
